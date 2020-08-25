@@ -1,0 +1,26 @@
+{
+  "name": "learning-okta-signin-widget",
+  "version": "1.0.0",
+  "description": "Just one of the things I'm learning. <https://github.com/hchiam/learning>",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js & (sleep 1; open http://localhost:8080) && echo '\n\nRemember to run yarn stop\n'",
+    "stop": "killall node",
+    "publish-success-page": "surge success-page https://okta-signin-demo-success.surge.sh",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hchiam/learning-okta-signin-widget.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hchiam/learning-okta-signin-widget/issues"
+  },
+  "homepage": "https://github.com/hchiam/learning-okta-signin-widget#readme",
+  "dependencies": {
+    "@okta/okta-signin-widget": "^4.3.3",
+    "express": "^4.17.1"
+  }
+}
